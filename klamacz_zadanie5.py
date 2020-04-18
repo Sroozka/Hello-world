@@ -10,18 +10,18 @@ class Figure:
     def __init__(self):
        pass
     v_side = 10
+    
+    def Circumference(self):
+        return 2*3.14*self.ray
+
+    def Area(self):
+        return 3.14*self.ray**2
 
 class Circle(Figure):
     def __init__(self, ray=10):
         self.ray = ray
         print("Circle ray 0<R<=100")
         if self.ray <= 0 or self.ray>100 : self.ray = 10
-
-    def Circumference(self):
-        return 2*3.14*self.ray
-
-    def Area(self):
-        return 3.14*self.ray**2
 
 class Triangle(Figure):
     def __init__(self, a=5, b=5, c=5):
