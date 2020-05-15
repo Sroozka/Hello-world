@@ -31,7 +31,7 @@ class Triangle(Figure):
         if self.a <= 0: self.a = 10
         if self.b <= 0: self.a = 10
         if self.c <= 0: self.a = 10
-    O = super().a
+    #O = super().a
 
 class Rectangle(Figure):
     pass
@@ -42,7 +42,7 @@ class Square(Rectangle):
 def Area_Figures(figures):
     for figure in figures:
         print(figure.Area)
-        print(figure.O)
+        print(figure.)
 
 def main():
     circle = Circle(10)
